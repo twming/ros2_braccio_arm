@@ -1,0 +1,9 @@
+# Default initial positions for braccio_arm's ros2_control fake system
+
+initial_positions:
+  base: 0
+  elbow: 0
+  gripper_movable: 1.0
+  shoulder: 1.57
+  wrist_pitch: 0
+  wrist_roll: 0

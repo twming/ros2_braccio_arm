@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: ba_description
+    relative_path: urdf/braccio.urdf
+  srdf:
+    relative_path: config/braccio_arm.srdf
+  package_settings:
+    author_name: Tan Woei Ming
+    author_email: twming2001@yahoo.com.sg
+    generated_timestamp: 1698929699
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
