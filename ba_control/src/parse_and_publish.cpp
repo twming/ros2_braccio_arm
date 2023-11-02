@@ -27,8 +27,9 @@ public:
     message_.data.clear();
     for (int i = 0; i < 6; i++)
     {
-        // TODO: Put the DataArray element into the message. 
+        // TODO 1 : Put the DataArray element into the message. 
         //message_.data.push_back( ***your code here*** );
+
     }
     
     publisher_->publish(message_);
@@ -57,8 +58,9 @@ public:
     int i=0;
     for(i=0; i<6; i++)
     {
-      // TODO: Transform the angle from radian into degree 
-      // _DataArray[i]= uint( ***your code here*** );    
+      // TODO 2 : Transform the angle from radian into degree 
+      // _DataArray[i]= uint( ***your code here*** ); 
+      
     }
   }
 
@@ -78,8 +80,9 @@ int main(int argc, char * argv[]) {
     executor.add_node(node_pub);
     executor.add_node(node_sub);
 
-    // TODO: Spin the executor
+    // TODO 3 : Spin the executor
     // *** your code here ***
+    
 
     rclcpp::shutdown();
     

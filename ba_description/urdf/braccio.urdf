@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot name="visual" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="braccio_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <material name="gray">
     <color rgba="0.3 0.3 0.3 1"/>
@@ -30,7 +30,8 @@
   <link name="link1">
     <visual>
       <geometry>
-        <!-- TODO -->
+        <!-- TODO 1: base link-->
+        
       </geometry>
       <material name="orange"/> 
     </visual>
@@ -44,7 +45,8 @@
   <link name="link2">
     <visual>
       <geometry>
-        <!-- TODO -->
+        <!-- TODO 2: shoulder link-->
+        
       </geometry>
       <material name="orange"/>
       <origin rpy="0 0 0" xyz="0 0 -0.0505"/> 
@@ -60,7 +62,8 @@
   <link name="link3">
     <visual>
       <geometry>
-        <!-- TODO -->
+        <!-- TODO 3: elbow link-->
+        
       </geometry>
       <material name="orange"/>
       <origin rpy="0 0 0" xyz="0 0 -0.1705"/> 
@@ -76,7 +79,8 @@
   <link name="link4">
     <visual>
       <geometry>
-        <!-- TODO -->
+        <!-- TODO 4: wrist_pitch link-->
+        
       </geometry>
       <material name="orange"/>
       <origin rpy="0 0 0" xyz="0 0 -0.2905"/> 
@@ -92,7 +96,8 @@
   <link name="link5">
     <visual>
       <geometry>
-        <!-- TODO -->
+        <!-- TODO 5: wrist_roll link-->
+        
       </geometry>
       <material name="white"/>
       <origin rpy="0 0 0" xyz="0 0 -0.3505"/> 
@@ -108,7 +113,8 @@
   <link name="gripper_base">
     <visual>
       <geometry>
-        <!-- TODO -->
+        <!-- TODO 6: gripper_base link -->
+        
       </geometry>
       <material name="white"/>
       <origin rpy="0 0 0" xyz="0 0 -0.357"/> 
@@ -124,7 +130,8 @@
   <link name="gripper_fix">
     <visual>
       <geometry>
-        <!-- TODO -->
+        <!-- TODO 7: gripper_fix link-->
+        
       </geometry>
       <material name="white"/>
       <origin rpy="0 0 0" xyz="0 0 -0.36399"/> 
@@ -140,7 +147,8 @@
   <link name="gripper_movable">
     <visual>
       <geometry>
-        <!-- TODO -->
+        <!-- TODO 8: gripper_movable link-->
+        
       </geometry>
       <material name="white"/>
       <origin rpy="0 0 0" xyz="-0.01559 0 -0.36399"/> 

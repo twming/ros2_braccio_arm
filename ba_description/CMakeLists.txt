@@ -8,30 +8,10 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
-find_package(sensor_msgs REQUIRED)
-
-set(dependencies
-   rclcpp
-   std_msgs
-   sensor_msgs
-)
-
-add_executable(parse_and_publish src/parse_and_publish.cpp)
-ament_target_dependencies(parse_and_publish ${dependencies})
-
-install(TARGETS
-   parse_and_publish
-   ARCHIVE DESTINATION lib
-   LIBRARY DESTINATION lib
-   RUNTIME DESTINATION lib/${PROJECT_NAME}
-)
 
 install(
-   DIRECTORY urdf meshes src launch
+   DIRECTORY urdf meshes launch rviz
    DESTINATION share/${PROJECT_NAME}/
 )
-   
-
 
 ament_package()
